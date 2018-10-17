@@ -228,7 +228,7 @@
         }
         function renderList(el, arr) {
             el.innerHTML = ''
-            arr.forEach(element => {
+            arr.reverse().forEach(element => {
                 el.innerHTML +=
                     `<tr ondblclick="remove(this)" id="${element.id}">
                     <td>${element.author}</td>
